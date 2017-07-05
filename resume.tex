@@ -1,0 +1,163 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+\begin{minipage}{0.7\textwidth}
+    \Huge{Varun Khare} \\
+    \normalsize{Undergraduate Computer Science}\\
+\end{minipage}
+\begin{minipage}{0.35\textwidth}
+\begin{tabular}{m{0.5cm} l}
+    \faEnvelope & \href{mailto:varun@iitk.ac.in}{varun@iitk.ac.in}  \\
+    \faGithub & \href{https://www.github.com/varunkhare1234}{github.com/varunkhare1234}\\
+    \faPhone & +91-8717983153
+\end{tabular}{}
+\end{minipage}
+
+\resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
+\\ \\
+%\begin{table}[ht!]
+%\begin{center}
+\indent \begin{tabular}{ l @{\hskip 0.50in} l @{\hskip 0.5in} l @{\hskip 0.5in} l }
+\hline
+\textbf{Examination} & \textbf{Institute} & \textbf{Year} & \textbf{CPI/\%} \\
+\hline
+\\
+\textit{Computer Science and Engineering} & IIT Kanpur & 2015-present & 9.3\\
+\textit{Class XII} & Delhi Public School, Bhopal & 2015 & 93.8\\
+\textit{Class X} & Delhi Public School, Bhopal & 2013 & 10.0\\
+\\
+\hline
+\end{tabular}
+%\end{center}
+%\end{table}
+\\ \\
+\indent \textbf{Relevant Courses}:\\ \indent Discrete Mathematics | Abstract Algebra | Logic in Computer Science\\ \indent Data Structures and Algorithms | Computer Organization
+
+\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+\begin{itemize}
+\item Artificial Intelligence and Machine Learning
+\item Computer Vision : Scene Understanding, 3D modelling, Motion Capture
+\item Augmented reality and Mixed Reality
+\end{itemize}
+
+\resheading{\textbf{MAJOR PROJECTS} }\\[\lsep]
+\begin{itemize}
+\item \textbf{3D Reconstruction} (Research Project) \\
+ \emph{(Guide:Prof. Gaurav Sharma
+, May'16 - July'16)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Objective : Understand the principles of reconstruction, epipolar geometry.
+	\item Implemented \textbf{8 point} algorithm in Matlab and created 3D model from images
+	\item Studied Multiple View Geometry by Hartley and Zisserman, Structure from motion research papers
+	\item Extended Self project into Reconstruction from \textbf{single image} using monocular cues and \textbf{deep learning}
+	\end{itemize}
+
+\item \textbf{AR Navigation} (Programming Club Projec) \\
+ \emph{(Guide: Self, May'16 - June'16)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Created \textbf{Android} navigation app using Google Directions API and \textbf{unity3d game engine}.
+	\item Relayed unity graphics on camera feed according to accelerometer and gyroscope readings. GPS and compass was used to detect roads.
+	\item Awarded \textbf{best club project} | \faGithub : \href{https://github.com/varunkhare1234/augmented-reality-app}{varunkhare1234/augmented-reality-app}
+	\end{itemize}
+\item \textbf{On Device Machine Learning} (New York Office, \textit{IIT Kanpur}) \\
+ \emph{(Jan'17 - present)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Read and worked on \textbf{CoCoA} framework and Federated Learning papers by Google
+	\item Went through randomized coordinate descent, and other approaches tackled earlier.
+	\end{itemize}
+\item \textbf{Android App Dev} (New York Office, \textit{IIT Kanpur}) \\
+ \emph{(May'16 - present)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Implemented \textbf{SSE} notifications, Search functionality, code abstraction and \textbf{app-caching}
+	\item Worked on server client interaction, material UI, \textbf{data and property binding} 
+	\item Presently leading a team of 12 interns at NYO
+	\end{itemize}
+\item \textbf{Cryptography} (Course Project \textit{Discrete Mathematics}) \\
+ \emph{(Guide: Prof. Nitin Saxena, July'16 - Nov'16)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Implemented \textbf{Elgamal} algorithm giving a demonstration of encryption and decryption in python
+	\item Read about encryption systems and other algorithms involved \textbf{RSA, ELgamal, Rabin-Miller}
+	\item \textbf{Github:} \ \href{https://github.com/varunkhare1234/elgamal}{github.com/varunkhare1234/elgamal}
+	\end{itemize}
+\item\textbf{Machine Learning}
+    \begin{itemize}
+    \item Worked with CNN's, RNN's for image classification and image captioning
+    \item Undertook \textbf{Depression Therapy Chat bot} as Programming Club project. Implemented Sentiment Analysis using twitter dataset for user response classification.
+    \end{itemize}
+\end{itemize}	
+
+\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
+\\ \\
+\indent \begin{tabular}{c @{\hskip 0.3in}| @{\hskip 0.1in}l}
+    Languages & \textbf{Proficient}: C, Java, Matlab/Octave, Bash, python, MySQL, \LaTeX \\
+     & \textbf{Experienced}:R, Verilog, Assembly, C\#, HTML\\
+     \\
+     Softwares & \textbf{OS}: ARCH linux, Ubuntu, Windows\\
+     & \textbf{Softwares}: Android Studio, Unity 3D, NetBeans, Git, vim, CI Jenkins
+\end{tabular}
+
+\resheading{\textbf{HONORS AND AWARDS} }\\[\lsep]
+\\ \\
+\indent \begin{tabular}{l@{\hskip 0.24in}| @{\hskip 0.1in} l @{\hskip 0.3in} l}
+    Fellowships & National Talent Search Examination (\textbf{NTSE}), 2013 & Government of India\\
+     &  \textbf{KVPY} scholar, 2014 & Government of India\\
+     \\
+     Awards & \textbf{Academic Excellence Award}, 2015-2016 & IIT Kanpur\\
+     & All-India Rank \textbf{192} amongst 1.5 million students & IIT-JEE, 2015\\
+     & Scholarship (Complete fee-waiver) 2013 & DPS Bhopal\\
+\end{tabular}{}
+
+\resheading{\textbf{POSITION OF RESPONSIBILITY} }\\[\lsep]
+\\ \\ \indent
+\begin{tabular}{l @{\hskip 0.5in}l @{\hskip 0.3in}r }
+\textbf{Coordinator} & \textit{Programming Club, IIT Kanpur} & \emph{(May'17-Present)}\\
+\textbf{Coordinator} & \textit{Google Developers Group} &
+\emph{(May'16-April'17)}\\
+\textbf{Manager} & \textit{Software Corner, Techkriti 2017 (Annual Tech Fest of IIT Kanpur)} &
+\emph{(May'16-April'17)}\\
+\textbf{Student Guide} & \textit{Counselling service, IIT Kanpur} & \emph{(June'16-April'17)}\\
+\textbf{Academic Mentor} & \textit{Counselling service, IIT Kanpur} & \emph{(June'16-April'17)}\\
+\textbf{Senior Executive} & \textit{Entrepreneurship Cell, IIT Kanpur} & \emph{(June'16-April'17)}\\
+\end{tabular}
+
+\end{document}
+
+
