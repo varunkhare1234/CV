@@ -9,20 +9,24 @@
 \usepackage{fontawesome}
 \fontfamily{SansSerif}
 \selectfont
+
 \usepackage[T1]{fontenc}
 \usepackage
 %[ansinew]
 [utf8]
 {inputenc}
+
 \usepackage{color}
 \definecolor{mygrey}{gray}{0.75}
 \textheight=9.75in
 \raggedbottom
+
 \setlength{\tabcolsep}{0in}
 \newcommand{\isep}{-2 pt}
 \newcommand{\lsep}{-0.5cm}
 \newcommand{\psep}{-0.6cm}
 \renewcommand{\labelitemii}{$\circ$}
+
 \pagestyle{empty}
 %-----------------------------------------------------------
 %Custom commands
@@ -33,19 +37,21 @@
 	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
 \end{tabular*}\vspace{-8pt}}
 %-----------------------------------------------------------
+
 \begin{document}
 \begin{minipage}{0.7\textwidth}
-\Huge{Varun Khare} \\
-\normalsize{Undergraduate Computer Science}\\
+    \Huge{Varun Khare} \\
+    \normalsize{Undergraduate Computer Science}\\
 \end{minipage}
 \begin{minipage}{0.35\textwidth}
 \begin{tabular}{m{0.5cm} l}
-\faGlobe & \href{http://home.iitk.ac.in/~varun}{home.iitk.ac.in/\sim varun}\\
-\faEnvelope & \href{mailto:varun@iitk.ac.in}{varun@iitk.ac.in}  \\
-\faGithub & \href{https://www.github.com/varunkhare1234}{github.com/varunkhare1234}\\
-\faPhone & +91-8717983153
+    \faGlobe & \href{http://home.iitk.ac.in/~varun}{home.iitk.ac.in/\sim varun}\\
+    \faEnvelope & \href{mailto:varun@iitk.ac.in}{varun@iitk.ac.in}  \\
+    \faGithub & \href{https://www.github.com/varunkhare1234}{github.com/varunkhare1234}\\
+    \faPhone & +91-8717983153
 \end{tabular}{}
 \end{minipage}
+
 \resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
 \\ \\
 %\begin{table}[ht!]
@@ -64,75 +70,93 @@
 %\end{center}
 %\end{table}
 \\ \\
-\indent \textbf{Relevant Courses}:\\ \indent Discrete Mathematics | Abstract Algebra | Logic in Computer Science\\ \indent Data Structures and Algorithms | Computer Organization | Machine Learning Theory* | Operating Systems* \\ \indent Theory of Computation* \hspace{4.15in} (* : ongoing) \\
+\indent \textbf{Relevant Courses}:\\ \indent Discrete Mathematics | Abstract Algebra Data Structures and Algorithms | Intro to Machine learning \\ \indent Operating Systems 
+| Theory of Computation | Computational Cognitive Science* | Learning Theory*\\ \indent Probabilistic Machine Learning* \hspace{3.6in} (* : ongoing) \\
+
 \resheading{\textbf{HONORS AND AWARDS} }\\[\lsep]
 \\ \\
 \indent \begin{tabular}{l@{\hskip 0.24in}| @{\hskip 0.1in} l @{\hskip 0.3in} l}
-Fellowships & National Talent Search Examination (\textbf{NTSE}), 2013 & Government of India\\
-&  \textbf{KVPY} scholar, 2014 & Government of India\\
-\\
-Awards & \textbf{Academic Excellence Award}, 2015-2016 & IIT Kanpur\\
-& All-India Rank \textbf{192} amongst 1.5 million students & IIT-JEE, 2015\\
-& Scholarship (Complete fee-waiver) 2013 & DPS Bhopal\\
+    Fellowships & National Talent Search Examination (\textbf{NTSE}), 2013 & Government of India\\
+     &  \textbf{KVPY} scholar, 2014 & Government of India\\
+     \\
+     Awards & \textbf{Academic Excellence Award}, 2015-2016 & IIT Kanpur\\
+     & All-India Rank \textbf{192} amongst 1.5 million students & IIT-JEE, 2015\\
+     & Scholarship (Complete fee-waiver) 2013 & DPS Bhopal\\
 \end{tabular}
+
 \resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
 \begin{itemize}
 \item Artificial Intelligence and Machine Learning
 \item Computer Vision : Scene Understanding, 3D modelling, Motion Capture
-\item Augmented reality and Mixed Reality
+\item Augmented reality, Natural Language Processing
 \end{itemize}
+
 \resheading{\textbf{MAJOR PROJECTS} }\\[\lsep]
+
 \begin{itemize}
+
+\item \textbf{Language Understanding and Information Retreival} (Under Graduate Project) \\
+ \emph{(Guide: Arnab Bhattacharya \& Amay Karkare, July'17 - Dec'17)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item \textbf{Objective} : Creating a word problem solver for elementary maths problems
+	\item Implemented the model using word2vec, \textbf{coreference resolution}, \textbf{syntactic parsing} and \textbf{dependency parsing}
+	\item Involved natural language understanding,\textbf{ world concept graph generation}, quantity association and query evaluation
+	\item \textbf{Github} \faGithub  : \href{https://github.com/varunkhare1234/word_problem_solver }{github.com/varunkhare1234/word\_problem\_solver}
+	\end{itemize}
+	
 \item \textbf{3D Reconstruction} (Research Project) \\
-\emph{(Guide:Prof. Gaurav Sharma, IIT Kanpur
+ \emph{(Self Project
 , May'16 - April'17)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
-	\item Objective : Understand the principles of reconstruction, epipolar geometry.
+	\item \textbf{Objective} : Understand the principles of reconstruction, epipolar geometry.
 	\item Coded \textbf{8 point} algorithm involving RANSAC and SIFT in Matlab and created a meshlab model from images. \item Studied Multiple View Geometry by Hartley and Zisserman and Structure from motion research papers
 	\item \textbf{Single View Reconstruction:} Implemented deep learning model \textbf{\href{https://arxiv.org/pdf/1604.00449.pdf}{3D Residual Recurrent CNN auto-encoder}} for single object; \textbf{{Scene reconstruction}} using MRF and monocular cues applied on segmented super pixels. 
 	\end{itemize}
+
 \item \textbf{AR Navigation} (Programming Club Project) \\
-\emph{(Guide: Self, May'16 - June'16)} \\[-0.6cm]
+ \emph{(Guide: Self, May'16 - June'16)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
 	\item Created \textbf{Android} navigation app using Google Directions API and \textbf{unity3d game engine}.
 	\item Relayed unity graphics on camera feed according to accelerometer and gyroscope readings. GPS and magnetic compass was used to detect roads.
 	\item Awarded \textbf{best club project} | \faGithub : \href{https://github.com/varunkhare1234/augmented-reality-app}{varunkhare1234/augmented-reality-app}
 	\end{itemize}
 \item \textbf{On Device Machine Learning} (New York Office, \textit{IIT Kanpur}) \\
-\emph{(Jan'17 - present)} \\[-0.6cm]
+ \emph{(Jan'17 - present)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
 	\item Worked on \textbf{CoCoA} framework and Federated Machine Learning 
 	\item Implementation on the app using tensorflow mobile
 	\end{itemize}
 \item \textbf{Android App Dev} (New York Office, \textit{IIT Kanpur}) \\
-\emph{(May'16 - present)} \\[-0.6cm]
+ \emph{(May'16 - present)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
 	\item Implemented \textbf{SSE} notifications, Search functionality, code abstraction and \textbf{app-caching}
 	\item Worked on REST APIs, material UI, Continuous integration with Jenkins, \textbf{data and property binding} 
 	\item Lead a team of 12 interns at NYO.
 	\end{itemize}
 \item \textbf{Cryptography} (Course Project \textit{Discrete Mathematics}) \\
-\emph{(Guide: Prof. Nitin Saxena, July'16 - Nov'16)} \\[-0.6cm]
+ \emph{(Guide: Prof. Nitin Saxena, July'16 - Nov'16)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
 	\item Implemented \textbf{Elgamal} algorithm giving a demonstration of encryption and decryption in python
 	\item Read about encryption systems and other algorithms involved \textbf{RSA, ELgamal, Rabin-Miller}
 	\item \textbf{Github:} \ \href{https://github.com/varunkhare1234/elgamal}{github.com/varunkhare1234/elgamal}
 	\end{itemize}
 \item\textbf{Other Projects}
-\begin{itemize}
-\item Mentored \textbf{Depression Therapy Chat bot} as Programming Club project. Students implemented Sentiment Analysis using twitter data-set for user response classification. Classified in \textbf{Most innovative student activities} by IITK Newsletter.
-\item Android application development for Antaragni 2016 | Mechanical Coin sorter as Technical Arts project.
-\end{itemize}
+    \begin{itemize}
+    \item Mentored \textbf{Depression Therapy Chat bot} as Programming Club project. Students implemented Sentiment Analysis using twitter data-set for user response classification. Classified in \textbf{Most innovative student activities} by IITK Newsletter.
+    \item Android application development for Antaragni 2016 | Mechanical Coin sorter as Technical Arts project.
+    \end{itemize}
 \end{itemize}	
+
 \resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
 \\ \\
 \indent \begin{tabular}{c @{\hskip 0.3in}| @{\hskip 0.1in}l}
-Languages & \textbf{Proficient}: C,C++, Java, Matlab/Octave, Bash, python, MySQL, \LaTeX \\
-& \textbf{Experienced}:R, Verilog, Assembly, C\#, HTML\\
-\\
-Softwares & \textbf{OS}: ARCH linux, Ubuntu, Windows\\
-& \textbf{Softwares}: Android Studio, Unity 3D, NetBeans, Git, vim, CI Jenkins
+    Languages & \textbf{Proficient}: C,C++, Java, Matlab/Octave, Bash, python, MySQL, \LaTeX \\
+     & \textbf{Experienced}:R, Verilog, Assembly, C\#, HTML\\
+     \\
+     Softwares & \textbf{OS}: ARCH linux, Ubuntu, Windows\\
+     & \textbf{Softwares}: Android Studio, Unity 3D, NetBeans, Git, vim, CI Jenkins
 \end{tabular}
+
 \resheading{\textbf{POSITION OF RESPONSIBILITY} }\\[\lsep]
 \\ \\ \indent
 \begin{tabular}{l @{\hskip 0.5in}l @{\hskip 0.3in}r }
@@ -146,4 +170,5 @@ Softwares & \textbf{OS}: ARCH linux, Ubuntu, Windows\\
 \textbf{Senior Web Executive} & \textit{Antaragni 2016 (Annual Cult Fest)} & \emph{(May'16-Nov'16)}\\
 \textbf{Senior Executive} & \textit{Entrepreneurship Cell, IIT Kanpur} & \emph{(June'16-April'17)}\\
 \end{tabular}
+
 \end{document}
