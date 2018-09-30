@@ -1,6 +1,6 @@
 \documentclass[a4paper,10pt]{article}
 %-----------------------------------------------------------
-\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage[top=0.70in, bottom=0.70in, left=0.55in, right=0.85in]{geometry}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{palatino}
@@ -61,7 +61,7 @@
 \textbf{Examination} & \textbf{Institute} & \textbf{Year} & \textbf{CPI/\%} \\
 \hline
 \\
-\textit{Computer Science and Engineering} & IIT Kanpur & 2015-present & 9.24\\
+\textit{Computer Science and Engineering} & IIT Kanpur & 2015-present & 9.0\\
 \textit{Class XII} & Delhi Public School, Bhopal & 2015 & 93.8\\
 \textit{Class X} & Delhi Public School, Bhopal & 2013 & 10.0\\
 \\
@@ -70,10 +70,15 @@
 %\end{center}
 %\end{table}
 \\ \\
-\indent \textbf{Relevant Courses}:\\ \indent Discrete Mathematics | Abstract Algebra Data Structures and Algorithms | Intro to Machine learning \\ \indent Operating Systems 
-| Theory of Computation | Computational Cognitive Science* | Learning Theory*\\ \indent Probabilistic Machine Learning* \hspace{3.6in} (* : ongoing) \\
-
-\resheading{\textbf{HONORS AND AWARDS} }\\[\lsep]
+\indent \textbf{Relevant Courses}:
+\\ \\
+\indent \begin{tabular}{l@{\hskip 0.24in}|@{\hskip 0.1in} l @{\hskip 0.3in}|@{\hskip 0.1in} l}
+Computational Cognitive Science & Stochastic Processes & Discrete Mathematics\\
+Bayesian Machine Learning & Introduction to Machine learning& Data Structures and Algorithms\\
+Learning Theory  &  Probability and Statistics
+& Theory of Computation\\
+\end{tabular} \\ \\
+\indent \resheading{\textbf{HONORS AND AWARDS} }\\[\lsep]
 \\ \\
 \indent \begin{tabular}{l@{\hskip 0.24in}| @{\hskip 0.1in} l @{\hskip 0.3in} l}
     Fellowships & National Talent Search Examination (\textbf{NTSE}), 2013 & Government of India\\
@@ -84,62 +89,68 @@
      & Scholarship (Complete fee-waiver) 2013 & DPS Bhopal\\
 \end{tabular}
 
-\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+\indent \resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
 \begin{itemize}
-\item Artificial Intelligence and Machine Learning
-\item Computer Vision : Scene Understanding, 3D modelling, Motion Capture
-\item Augmented reality, Natural Language Processing
+\item Neuroscience, Cognitive Sciences , Meta-Learning and psychology 
+\item Augmented reality, 3D computer vision , Analysis of learning algorithms, Probabilistic modelling
+\end{itemize}
+
+\resheading{\textbf{WORK EXPERIENCE} }\\[\lsep]
+\begin{itemize}
+\item \textbf{Visiting Research Scholar} (National University Singapore)\\
+ \emph{(Guide: Prof. Tat Seng Chua, May'18 - July'18)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item \textbf{Objective} : 3D scene manipulation for Augmented Reality Systems
+	\item Proposed an end-to-end architecture to \textbf{reconstruct 3D model} and extract the \textbf{corresponding pose} from canonical viewpoint
+	\item Our Neural Net module predicts poses\textbf{ (6 DoF) }in the continuous domain without needing \textbf{PnP} based solvers and hence can be plugged into any architecture 
+	\item Results \textbf{better than SOTA} methods using PnP
+	\item Also implemented texture mapping from image to corresponding aligned 3D model
+	\end{itemize}
+
+\item \textbf{Software Lead} (New York Office, IIT Kanpur)\\
+ \emph{(Guide: Prof. Manindra Agarwal, May'16 - May'18)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+		\item \textbf{Objective} : Industrial grade development of ML backend and android application for NYO
+	\item \textbf{ML systems}: Collaborative Filtering for \textbf{Recommendation engine}; document clustering and ranking for \textbf{query-search}
+	\item \textbf{Android app}: REST APIs, SSE notifications, app-caching, Continuous integration with Jenkins, \textbf{data and property binding} and app designing 
+	\item Lead a team of 12 people at NYO.
+	\end{itemize}
 \end{itemize}
 
 \resheading{\textbf{MAJOR PROJECTS} }\\[\lsep]
 
 \begin{itemize}
-
-\item \textbf{Language Understanding and Information Retreival} (Under Graduate Project) \\
- \emph{(Guide: Arnab Bhattacharya \& Amay Karkare, July'17 - Dec'17)} \\[-0.6cm]
+\item \textbf{Zero-Shot Learning Framework} (Under Graduate Project)\\
+ \emph{(Guide: Prof. Piyush Rai, Jan'18 - present)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Implemented \textbf{hubness reduction} and \textbf{domain adaptation} techniques extending the  framework published in ECML paper | \faGlobe \ \href{https://arxiv.org/pdf/1711.05820.pdf}{\textit{link}} 
+	\item Reformulated the Bayesian model to incorporate neural networks for \textbf{simultaneous feature learning} and \textbf{clustering} achieving performance higher than the  \textbf{current SOTA} 
+    \item Expecting to publish our results in 2019.
+	\end{itemize}
+\item \textbf{Adversarial Corruption in deep Neural Networks} \\
+ \emph{(Guide: Prof. Purushottam Kar, Jan'18 - April'18)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item \textbf{Objective} : Theoretical analysis for robust learning of deep networks
+	\item Came up with an algorithm for robustly training a single hidden layer ReLU network.
+	\item Literature survey included robust regression, robust logistic regression, convergence analysis of two layer network amongst others.
+	\end{itemize}
+\item \textbf{Language Understanding and Information Retrieval} (Under Graduate Project) \\
+ \emph{(Guide: Prof. Arnab Bhattacharya \& Prof. Amay Karkare, July'17 - Dec'17)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
 	\item \textbf{Objective} : Creating a word problem solver for elementary maths problems
-	\item Implemented the model using word2vec, \textbf{coreference resolution}, \textbf{syntactic parsing} and \textbf{dependency parsing}
+	\item Implemented the model using word2vec, \textbf{co-reference resolution}, \textbf{syntactic parsing} and \textbf{dependency parsing}
 	\item Involved natural language understanding,\textbf{ world concept graph generation}, quantity association and query evaluation
 	\item \textbf{Github} \faGithub  : \href{https://github.com/varunkhare1234/word_problem_solver }{github.com/varunkhare1234/word\_problem\_solver}
 	\end{itemize}
-	
-\item \textbf{3D Reconstruction} (Research Project) \\
- \emph{(Self Project
-, May'16 - April'17)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item \textbf{Objective} : Understand the principles of reconstruction, epipolar geometry.
-	\item Coded \textbf{8 point} algorithm involving RANSAC and SIFT in Matlab and created a meshlab model from images. \item Studied Multiple View Geometry by Hartley and Zisserman and Structure from motion research papers
-	\item \textbf{Single View Reconstruction:} Implemented deep learning model \textbf{\href{https://arxiv.org/pdf/1604.00449.pdf}{3D Residual Recurrent CNN auto-encoder}} for single object; \textbf{{Scene reconstruction}} using MRF and monocular cues applied on segmented super pixels. 
-	\end{itemize}
 
-\item \textbf{AR Navigation} (Programming Club Project) \\
+\item \textbf{Augmented Reality Navigation} (Programming Club Project) \\
  \emph{(Guide: Self, May'16 - June'16)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
 	\item Created \textbf{Android} navigation app using Google Directions API and \textbf{unity3d game engine}.
 	\item Relayed unity graphics on camera feed according to accelerometer and gyroscope readings. GPS and magnetic compass was used to detect roads.
 	\item Awarded \textbf{best club project} | \faGithub : \href{https://github.com/varunkhare1234/augmented-reality-app}{varunkhare1234/augmented-reality-app}
 	\end{itemize}
-\item \textbf{On Device Machine Learning} (New York Office, \textit{IIT Kanpur}) \\
- \emph{(Jan'17 - present)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item Worked on \textbf{CoCoA} framework and Federated Machine Learning 
-	\item Implementation on the app using tensorflow mobile
-	\end{itemize}
-\item \textbf{Android App Dev} (New York Office, \textit{IIT Kanpur}) \\
- \emph{(May'16 - present)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item Implemented \textbf{SSE} notifications, Search functionality, code abstraction and \textbf{app-caching}
-	\item Worked on REST APIs, material UI, Continuous integration with Jenkins, \textbf{data and property binding} 
-	\item Lead a team of 12 interns at NYO.
-	\end{itemize}
-\item \textbf{Cryptography} (Course Project \textit{Discrete Mathematics}) \\
- \emph{(Guide: Prof. Nitin Saxena, July'16 - Nov'16)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	\item Implemented \textbf{Elgamal} algorithm giving a demonstration of encryption and decryption in python
-	\item Read about encryption systems and other algorithms involved \textbf{RSA, ELgamal, Rabin-Miller}
-	\item \textbf{Github:} \ \href{https://github.com/varunkhare1234/elgamal}{github.com/varunkhare1234/elgamal}
-	\end{itemize}
+
 \item\textbf{Other Projects}
     \begin{itemize}
     \item Mentored \textbf{Depression Therapy Chat bot} as Programming Club project. Students implemented Sentiment Analysis using twitter data-set for user response classification. Classified in \textbf{Most innovative student activities} by IITK Newsletter.
@@ -150,17 +161,17 @@
 \resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
 \\ \\
 \indent \begin{tabular}{c @{\hskip 0.3in}| @{\hskip 0.1in}l}
-    Languages & \textbf{Proficient}: C,C++, Java, Matlab/Octave, Bash, python, MySQL, \LaTeX \\
+    Languages & \textbf{Proficient}: Kotlin,C,C++, Java, Matlab/Octave, Bash, python, MySQL, \LaTeX \\
      & \textbf{Experienced}:R, Verilog, Assembly, C\#, HTML\\
      \\
      Softwares & \textbf{OS}: ARCH linux, Ubuntu, Windows\\
-     & \textbf{Softwares}: Android Studio, Unity 3D, NetBeans, Git, vim, CI Jenkins
-\end{tabular}
+     & \textbf{Libraries and Softwares}: Tensorflow, Pytorch, Edward, Android Studio, blender, CI Jenkins
+\end{tabular}\\ \\
 
 \resheading{\textbf{POSITION OF RESPONSIBILITY} }\\[\lsep]
 \\ \\ \indent
 \begin{tabular}{l @{\hskip 0.5in}l @{\hskip 0.3in}r }
-\textbf{Coordinator} & \textit{Programming Club, IIT Kanpur} & \emph{(May'17-Present)}\\
+\textbf{Coordinator} & \textit{Programming Club, IIT Kanpur} & \emph{(May'17-March'18)}\\
 \textbf{Coordinator} & \textit{Google Developers Group} &
 \emph{(May'16-April'17)}\\
 \textbf{Manager} & \textit{Software Corner, Techkriti 2017 (Annual Tech Fest)} &
