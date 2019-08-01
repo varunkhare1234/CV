@@ -41,13 +41,13 @@
 \begin{document}
 \begin{minipage}{0.7\textwidth}
     \Huge{Varun Khare} \\
-    \normalsize{Undergraduate Computer Science}\\
+    \normalsize{Graduate Computer Science}\\
 \end{minipage}
 \begin{minipage}{0.35\textwidth}
 \begin{tabular}{m{0.5cm} l}
-    \faGlobe & \href{http://home.iitk.ac.in/~varun}{home.iitk.ac.in/\sim varun}\\
-    \faEnvelope & \href{mailto:varun@iitk.ac.in}{varun@iitk.ac.in}  \\
-    \faGithub & \href{https://www.github.com/varunkhare1234}{github.com/varunkhare1234}\\
+    \faGlobe & \href{http://vkkhare.github.io/}{vkkhare.github.io}\\
+    \faEnvelope & \href{mailto:varunkhare1234@gmail.com}{varunkhare1234@gmail.com}  \\
+    \faGithub & \href{https://www.github.com/vkkhare}{github.com/vkkhare}\\
     \faPhone & +91-8717983153
 \end{tabular}{}
 \end{minipage}
@@ -56,36 +56,38 @@
 \\ \\
 %\begin{table}[ht!]
 %\begin{center}
-\indent \begin{tabular}{ l @{\hskip 0.50in} l @{\hskip 0.5in} l @{\hskip 0.5in} l }
+\indent \begin{tabular}{ l @{\hskip 0.70in} l @{\hskip 0.7in} l @{\hskip 0.7in} l }
 \hline
 \textbf{Examination} & \textbf{Institute} & \textbf{Year} & \textbf{CPI/\%} \\
 \hline
 \\
-\textit{Computer Science and Engineering} & IIT Kanpur & 2015-present & 9.0\\
-\textit{Class XII} & Delhi Public School, Bhopal & 2015 & 93.8\\
-\textit{Class X} & Delhi Public School, Bhopal & 2013 & 10.0\\
+\textit{Computer Science and Engineering} & IIT Kanpur & 2015-2019 & 8.8*\\
+\textit{Class XII} & Delhi Public School, Bhopal & 2015 & 93.8*\\
+\textit{Class X} & Delhi Public School, Bhopal & 2013 & 10.0*\\
 \\
 \hline
+\small{* represents \textbf{distinction}}\\
 \end{tabular}
 %\end{center}
 %\end{table}
-\\ \\
+\\ \\ 
 \indent \textbf{Relevant Courses}:
 \\ \\
 \indent \begin{tabular}{l@{\hskip 0.24in}|@{\hskip 0.1in} l @{\hskip 0.3in}|@{\hskip 0.1in} l}
-Computational Cognitive Science & Stochastic Processes & Discrete Mathematics\\
-Bayesian Machine Learning & Introduction to Machine learning& Data Structures and Algorithms\\
+Computer Vision & Stochastic Processes & Computational Cognitive Science \\
+Bayesian Machine Learning & Introduction to Machine learning& Database Systems\\
 Learning Theory  &  Probability and Statistics
-& Theory of Computation\\
+& Computer Networks\\
 \end{tabular} \\ \\
 \indent \resheading{\textbf{HONORS AND AWARDS} }\\[\lsep]
 \\ \\
 \indent \begin{tabular}{l@{\hskip 0.24in}| @{\hskip 0.1in} l @{\hskip 0.3in} l}
     Fellowships & National Talent Search Examination (\textbf{NTSE}), 2013 & Government of India\\
-     &  \textbf{KVPY} scholar, 2014 & Government of India\\
+     & Young Scientist Promotion Fellowship (\textbf{KVPY}) scholar, 2014 & Government of India\\
      \\
      Awards 
      & Selected in \textbf{Top 15 teams worldwide}, Hack against Hunger(2018) & United Nations\\
+     & Most Innovative Student Activities (Depression therapy chatbot) & IITK newsletter\\
      & \textbf{Academic Excellence Award}, 2015-2016 & IIT Kanpur\\
      & All-India Rank \textbf{40} amongst 1.5 million students & IIT-MAINS, 2015\\
      & All-India Rank \textbf{192} amongst 150k students & IIT-JEE, 2015\\
@@ -94,8 +96,8 @@ Learning Theory  &  Probability and Statistics
 
 \indent \resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
 \begin{itemize}
-\item Neuroscience, Cognitive Sciences , Meta-Learning and psychology 
-\item Augmented reality, 3D computer vision , Analysis of learning algorithms, Probabilistic modelling
+\item Augmented reality, Computer Vision, Natural Language Understanding, Probabilistic modelling
+\item Neuroscience, Cognitive Science, language and vision
 \end{itemize}
 
 \resheading{\textbf{WORK EXPERIENCE} }\\[\lsep]
@@ -103,33 +105,36 @@ Learning Theory  &  Probability and Statistics
 \item \textbf{Visiting Research Scholar} (National University Singapore)\\
  \emph{(Guide: Prof. Tat Seng Chua, May'18 - July'18)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
-	\item \textbf{Objective} : 3D scene manipulation for Augmented Reality Systems
-	\item Proposed a novel end-to-end architecture consisting of two modules for robust pose prediction and classification based on \textbf{2.5 D sketches} proposed in \textbf{Marr's theory of vision} 
-	\item One sub module learns to \textbf{reconstruct 3D model} in its canonical viewpoint via \textbf{multi-task learning DNN}s.
-	\item Another NN sub module uses \textbf{Faster R-CNN} style anchor boxes to predict the \textbf{6 DoF} poses in \textbf{continuous domain} which \textbf{outperforms} PnP based solvers due to robust multi-class classification of 3D objects
-	\item Also implemented texture mapping from image to corresponding aligned 3D model
+	\item \textbf{Objective} : Monocular 3D object instance recognition and Pose Estimation
+	\item Proposed (alongside a graduate student) a novel end-to-end architecture consisting of two modules for robust pose prediction and instance recognition via extracting \textbf{Marr's 2.5 D sketches} from images.
+	\item The \textbf{learned embedding} explicitly \textbf{disentangles} a shape vector and a pose vector, which alleviates both pose bias for 3D shape retrieval and categorical bias for pose estimation
+	\item One sub module learns to \textbf{reconstruct 3D model}, from the 2.5D sketches, in its canonical viewpoint via \textbf{multi-task learning DNN}s. Another NN sub module uses \textbf{Faster R-CNN} style anchor boxes to predict the \textbf{6 DoF} poses in \textbf{continuous domain}.
+	\item The method achieves state of the art \textbf{10.3
+median error} for pose estimation and \textbf{0.592 top-1-accuracy}
+for \textbf{category agnostic 3D object retrieval} on the \textbf{Pascal3D+}
+dataset.
 	\end{itemize}
 
 \item \textbf{Software Lead} (New York Office, IIT Kanpur)\\
  \emph{(Guide: Prof. Manindra Agarwal, May'16 - May'18)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
-		\item \textbf{Objective} : Industrial grade development of ML backend and android application for NYO
-	\item \textbf{ML systems}: Collaborative Filtering for \textbf{Recommendation engine}; document clustering and ranking for \textbf{query-search}
+		\item \textbf{Objective} : Industrial grade deployment of ML backend and android application for NYO
+	\item \textbf{ML systems}: \textbf{Collaborative Filtering} for Recommendation engine; Automated response collection on scanned MCQ survey response sheets;\textbf{ NLU chatbot} using \textbf{RASA} pipeline with \textbf{NER}, \textbf{Relationship extraction} and quantity association
 	\item \textbf{Android app}: REST APIs, SSE notifications, app-caching, Continuous integration with Jenkins, \textbf{data and property binding} and app designing 
 	\item Lead a team of 16 people at NYO.
 	\end{itemize}
 \end{itemize}
-
+\vspace{0.2in}
 \resheading{\textbf{MAJOR PROJECTS} }\\[\lsep]
 
 \begin{itemize}
 \item \textbf{Zero-Shot Learning Framework} (Under Graduate Project)\\
  \emph{(Guide: Prof. Piyush Rai, Jan'18 - present)} \\[-0.6cm]
 	\begin{itemize}\itemsep \isep
-	\item Currently the \textbf{best generative framework} proposed in ZSL.
-	\item Extended the architecture published in ECML paper | \faGlobe \ \href{https://arxiv.org/pdf/1711.05820.pdf}{\textit{link}} to provide a unified generalization for language, vision and other domains.
-	\item Reformulated the Bayesian model to incorporate neural networks for \textbf{simultaneous feature learning} and \textbf{clustering} making an end to end learning procedure
-    \item Results better than current \textbf{SOTA} and expecting to publish our results in 2019.
+	\item Proposed a generative model for ZSL using \textbf{class conditional distributions} parametrized by non-linear functions of class attributes.
+	\item First work of its kind to propose an \textbf{adversarial domain adaptation} for minimizing the \textbf{domain shift} between the seen and unseen class distributions.
+	\item The generative model was trained using neural nets to model the class distributions resulting in \textbf{extensive hyper parameter stability}
+	\item The method achieved \textbf{state of the art accuracies} on benchmark datasets (AWA2, CUB and SUN). \textbf{First author submission} currently under review at \textbf{WACV 2020} | \href{https://arxiv.org/abs/1906.03038}{\textit{preprint \faExternalLink}}
 	\end{itemize}
 \item \textbf{Adversarial Corruption in deep Neural Networks} \\
  \emph{(Guide: Prof. Purushottam Kar, Jan'18 - April'18)} \\[-0.6cm]
@@ -138,7 +143,7 @@ Learning Theory  &  Probability and Statistics
 	\item Proposed an \textbf{alternating optimization} algorithm for the single layer Relu activated neural network. Converted the optimization problem to a \textbf{difference of convex functions} for robust optimization.
 	\item Practically compared the training procedure to SGD as a proof of concept.
 	\item Literature survey included robust statistics, convergence analysis of two layer network and various convergence proof techniques amongst others.
-	\item \textbf{Project Report:}\ \href{http://home.iitk.ac.in/~varun/CS777.pdf}{\textit{\faGlobe \ here}}
+	\item  \href{http://home.iitk.ac.in/~varun/CS777.pdf}{\textbf{Project Report:}\ \faExternalLink}
 	\end{itemize}
 \item \textbf{Concept-Graph based Word Problem solver} (Under Graduate Project) \\
  \emph{(Guide: Prof. Arnab Bhattacharya \& Prof. Amay Karkare, July'17 - Dec'17)} \\[-0.6cm]
@@ -147,7 +152,7 @@ Learning Theory  &  Probability and Statistics
 	\item Generated \textbf{ world concept graph} depicting \textbf{object-quantity} (like subject and distance) owner-ships, \textbf{value-quantity} associations (like 20kmph-speed) and reltionships between subjects. Used \textbf{DFS} to traverse the graph and evaluate the answer for query.
 	\item Implemented the model using word2vec, \textbf{co-reference resolution}, \textbf{syntactic parsing} and \textbf{dependency parsing}
 
-	\item \textbf{Github} \faGithub  : \href{https://github.com/varunkhare1234/word_problem_solver }{github.com/varunkhare1234/word\_problem\_solver}
+	\item \textbf{Github} \faGithub  : \href{https://github.com/varunkhare1234/word_problem_solver }{github.com/varunkhare1234/word\_problem\_solver} | \href{http://home.iitk.ac.in/~varun/word_problem_report.pdf }{\textbf{project report} \faExternalLink}
 	\end{itemize}
 
 \item \textbf{Augmented Reality Navigation} (Programming Club Project) \\
@@ -158,11 +163,11 @@ Learning Theory  &  Probability and Statistics
 	\item Awarded \textbf{best club project} | \faGithub : \href{https://github.com/varunkhare1234/augmented-reality-app}{varunkhare1234/augmented-reality-app}
 	\end{itemize}
 
-\item\textbf{Other Projects}
-    \begin{itemize}
-    \item Mentored \textbf{Depression Therapy Chat bot} as Programming Club project. Students implemented Sentiment Analysis using twitter data-set for user response classification. The model responded according a dialogue tree based on the sentiment predicted. Classified in \textbf{Most innovative student activities} by IITK Newsletter.
-    \item Android application development for Antaragni 2016 | Mechanical Coin sorter as Technical Arts project.
-    \end{itemize}
+% \item\textbf{Other Projects}
+%     \begin{itemize}
+%     \item Mentored \textbf{Depression Therapy Chat bot} as Programming Club project. The model responded by a dialogue tree based on the predicted sentiment. Classified in \textbf{Most innovative student activities} by IITK Newsletter.
+%     \item Android application development for Antaragni 2016 | Mechanical Coin sorter as Technical Arts project.
+%     \end{itemize}
 \end{itemize}	
 
 \resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
